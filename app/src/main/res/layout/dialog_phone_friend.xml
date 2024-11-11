@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#192A56"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Ảnh đại diện của người thân -->
+    <ImageView
+        android:id="@+id/friendAvatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avatar_image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nội dung gợi ý từ người thân -->
+    <TextView
+        android:id="@+id/friendAdviceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tôi chắc chắn đáp án chính xác cuối cùng là đáp án:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Đáp án mà người thân gợi ý -->
+    <TextView
+        android:id="@+id/friendAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+    android:textColor="#4CAF50"
+    android:textSize="24sp"
+    android:fontFamily="sans-serif-black"
+    android:layout_marginBottom="16dp" />
+
+    <!-- Nút "Cảm ơn" để đóng dialog -->
+    <Button
+        android:id="@+id/thankYouButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CẢM ƠN"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:background="@drawable/button_background"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

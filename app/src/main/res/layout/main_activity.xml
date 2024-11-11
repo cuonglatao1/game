@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000033">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <!-- TextView hiển thị số câu hỏi -->
+        <TextView
+            android:id="@+id/questionNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1 / 15"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="@drawable/round_background"/>
+
+        <!-- TextView hiển thị tổng tiền thưởng -->
+        <TextView
+            android:id="@+id/totalEarnings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$200"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="@drawable/round_background"/>
+
+        <!-- Nút mở bảng xếp hạng -->
+        <Button
+            android:id="@+id/leaderboardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="@drawable/help_button_background" />
+
+        <!-- Nút thoát game -->
+        <Button
+            android:id="@+id/stopGameButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/round_background"
+            android:text="⟲"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:padding="4dp" />
+    </LinearLayout>
+
+    <!-- Phần câu hỏi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/question_background">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Con vật nào sau đây khác với 3 con còn lại?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Các lựa chọn trả lời -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/answerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A. Tôm"
+            android:background="@drawable/answer_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/answerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B. Sò"
+            android:background="@drawable/answer_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/answerC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C. Nghêu"
+            android:background="@drawable/answer_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/answerD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D. Ngao"
+            android:background="@drawable/answer_background"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+
+    <!-- Các quyền trợ giúp -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/fiftyFifty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/help_button_background"
+            android:text="50:50"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/phoneFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/help_button_background"
+            android:text="📞"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/askAudience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/help_button_background"
+            android:text="👥"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/changeQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/help_button_background"
+            android:text="🔄"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+</LinearLayout>
